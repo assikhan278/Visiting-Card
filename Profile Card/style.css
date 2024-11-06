@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Blinker:wght@300&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ font-family: 'Poppins', sans-serif;  
+}
+
+
+ body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    width: 100%;
+    background-color: aliceblue;
+    border-radius: 24px;
+    padding:  0px 10px;
+    box-shadow: 0 5px 10px rgb(0,0,0,1);
+    position: relative;
+}
+
+.profile-card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    margin-bottom: 50px;
+    background-color: #12265cb6;
+}
+
+.image{
+    position: relative;
+    height: 220px;
+    width: 302px;
+    border-radius: 24px 24px 0 0;
+    background-color: #12073057;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.image .profile-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    padding: 3px solid white;
+    margin-top: 0px;
+    margin-bottom: 10px;
+} 
+
+.profile-card .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-data .name{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.text-data .job{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.profile-card .media-buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.media-buttons .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    height: 34px;
+    width: 34px;
+    margin: 0 8px;
+    border-radius: 24%;
+    background-color: #4070f4;
+    text-decoration: none;
+}
+
+.profile-card .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.buttons .button{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    border: none;
+    border-radius: 24px;
+    margin: 0 10px;
+    padding: 8px 24px;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttons .button:hover{
+    background-color: #031f6d;
+}
+
+.profile-card .analytics{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.analytics .data{
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 0 20px;
+    border-right: 2px solid #e7e7e7;
+}
+
+.data .i{
+    font-size: 18px;
+    margin-left: 6px;
+}
+
+.data:last-child{
+    border-right: none;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(22, 22, 39);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 0px;
+}
+
+form h3{
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 05px;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 05px 0;
+    padding: 10px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 10px;
+}
+
+form button{
+    padding: 10px;
+    background: rgb(235, 44, 44);
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 10px auto 0;
+    border-radius: 30px;
+}

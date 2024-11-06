@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container" id="whatsapp">
+        <form onsubmit="sendEmail(); reset(); return false; "> 
+<h3> Vehicle Registration & Transfer Detail’s </h3>
+            <input type="text" id="registration" placeholder="ABC-24-278" required> 
+            <input type="text" id="chassis" placeholder="Chassis No." required> 
+            <input type="text" id="engine" placeholder="Engine No." required> 
+            <input type="text" id="buyerName" placeholder="Buyer Name" required> 
+            <input type="text" id="fatherName" placeholder="Father Name" required> 
+            <input type="text" id="cnicNo" placeholder="00000-0000000-0" required> 
+            <input type="text" id="cnic" placeholder="CNIC Issue Date" required> 
+            <input type="text" id="phone" placeholder="+923 ....." required> 
+            <input type="text" id="address" placeholder="Postal Address" required>
+            <button onclick="sendToWhatsapp()">Submit</button>
+        </form>
+     </div>
+    
+    <script src="whatsapp.js"> </script>
+
+
+</body>
+</html>
